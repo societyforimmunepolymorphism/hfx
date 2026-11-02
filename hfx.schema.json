@@ -363,18 +363,17 @@
     "frequencyDataLocation": {
       "oneOf": [
         {
-          "type": "string",
-          "format": "uri",
-          "description": "URI can be http:// or file://data.csv"
+          "const": "inline",
+          "description": "Reserved literal indicating frequency data is embedded in the document via the top-level 'frequencyData' array"
         },
         {
           "type": "string",
-          "enum": [
-            "inline"
-          ]
+          "pattern": "^(https?|ftps?|file)://.+",
+          "format": "uri",
+          "description": "URI referencing an external frequency file, e.g. http://, https://, ftp:// or file://data.csv"
         }
       ],
-      "description": "Frequency is either inlined or available at the given URI"
+      "description": "Frequency is either inlined (the literal 'inline') or available at the given URI"
     },
     "license": {
       "type": "object",

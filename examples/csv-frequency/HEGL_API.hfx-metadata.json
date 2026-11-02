@@ -1,4 +1,5 @@
 {
+  "version": "0.1.1",
   "metadata": {
     "outputResolution": [
       {
@@ -65,7 +66,6 @@
       "haplotype": "Haplo",
       "frequency": "Freq",
       "count": "Count"
-    },
-    "checkSum": "aaa61c62fbaa2de9d5f6064d2b635e5c"
+    }
   }
 }

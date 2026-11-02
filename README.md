@@ -42,7 +42,7 @@ Key `metadata` properties (high-level):
 - `cohortDescription` (object): cohort metadata including `species`, `population` (array), `cohortSize`, and `dataSource`. Each population entry contains `name`, `geoLocation` (with `ISO3166`, optional `subdivision`, `latitude`, `longitude`), optional `populationSize` (numeric), `ethnicity`, `language`, and `religion`.
 - `nomenclatureUsed` (object): `database` (one of IPD groups) and `version` string.
 - `producer` (object): information about the data producer with `name`, `organisation`, `email`, and optional `publication` (`doi`, `year`).
-- `frequencyLocation` (string): either a URI (e.g., `file://` or `http://`) pointing to a CSV file or the literal `inline` if `frequencyData` is included in the document.
+- `frequencyLocation` (string): either the reserved literal `inline` (when `frequencyData` is included in the document), or a URI with a supported scheme (`http://`, `https://`, `ftp://`, or `file://`) pointing to an external frequency CSV file. The schema treats `inline` and the URI form as two mutually exclusive alternatives, so arbitrary strings without a supported scheme are rejected.
 - `frequencyFileHeader` (object, optional): maps expected field names (like `haplotype`, `frequency`, `count`) to the actual header names used in CSV files. Each property value must be a string. Example:
 
 ```json

@@ -1,0 +1,25 @@
+{
+  "name": "hfx",
+  "version": "0.0.0",
+  "description": "HFX (Haplotype Frequency eXchange) Format Specification",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/societyforimmunepolymorphism/hfx.git"
+  },
+  "license": "Apache-2.0",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/societyforimmunepolymorphism/hfx/issues"
+  },
+  "devDependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
+  },
+  "private": true
+}

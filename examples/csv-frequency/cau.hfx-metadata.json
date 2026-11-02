@@ -1,4 +1,5 @@
 {
+  "version": "0.1.1",
   "metadata": {
     "outputResolution": [
       {
@@ -60,7 +61,6 @@
         "year": "2007"
       }
     },
-    "frequencyLocation": "file://cau.csv",
-    "checkSum": "8e7bb58cff1a32c250898c13f2c354f4"
+    "frequencyLocation": "file://cau.csv"
   }
 }
